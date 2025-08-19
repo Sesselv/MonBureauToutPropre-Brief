@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Bureau Tout Propre</title>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <header class="section">
+      <div class="container l-large">
+        <nav class="navbar">
+          <div class="part-1">
+            <img src="public/img/logo.svg" alt="" />
+          </div>
+          <div class="part-2">
+            <ul>
+              <li><a href="#Accueil">Accueil</a></li>
+              <li><a href="#services">Nos services</a></li>
+              <li><a href="#simulateur">Simulateur de prix</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="sec-hero" id="Accueil">
+        <div class="container l-medium">
+          <h2>Mon Bureau Tout Propre</h2>
+          <p>
+            Spécialistes du nettoyage de bureaux, nous vous garantissons des
+            espaces de travail impeccables, sains et agréables pour vos
+            collaborateurs. <br />Découvrez dès maintenant notre simulateur de
+            prix pour obtenir une estimation claire et rapide.
+          </p>
+        </div>
+      </section>
+
+      <section class="sec-services" id="services">
+        <div class="container">
+          <h2>Nos services</h2>
+          <ul>
+            <li><span>🧽</span> <br />Nettoyage complet des bureaux</li>
+            <li>
+              <span>&#129309;</span><br />Entretien régulier adapté à vos
+              besoins
+            </li>
+            <li><span>🫧</span> <br />Nettoyage des vitres</li>
+            <li>
+              <span>🍃</span> <br />Produits respectueux de l’environnement
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="sec-simulateur" id="simulateur">
+        <div class="container">
+          <h2>Simulateur de prix</h2>
+          <div class="formulaire">
+            <form class="simulateurForm" id="simulateurForm">
+              <div class="champ">
+                <label for="surface">Surface des bureaux (x1.50/m²) :</label>
+                <input
+                  class="input"
+                  type="number"
+                  id="surface"
+                  required
+                  min="1"
+                />
+              </div>
+
+              <div class="champ">
+                <label for="frequence">Fréquence du nettoyage :</label>
+                <select class="input" id="frequence">
+                  <option value="1">1x / semaine</option>
+                  <option value="2">2x / semaine</option>
+                  <option value="5">Tous les jours (5x /semaine)</option>
+                </select>
+              </div>
+
+              <div class="champ">
+                <label>
+                  <input class="input" type="checkbox" id="vitres" />
+                  Vitres incluses (+10%)
+                </label>
+              </div>
+
+              <button type="button" class="calculer" id="calculer">
+                Calculer
+              </button>
+            </form>
+          </div>
+
+          <div class="resultats" id="result">
+            <h3>Résultats</h3>
+            <div class="montants">
+              <p><strong>Montant HT :</strong> <span id="ht">0</span> €</p>
+              <p><strong>TVA (20%) :</strong> <span id="tva">0</span> €</p>
+              <p><strong>Montant TTC :</strong> <span id="ttc">0</span> €</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-contact" id="contact">
+        <div class="container l-small">
+          <div class="part-1">
+            <h2>Contactez-nous !</h2>
+          </div>
+          <div class="part-2">
+            <ul>
+              <li>📍 Adresse : 123 Rue du Travail, Paris</li>
+              <li>📞 Téléphone : 01 23 45 67 89</li>
+              <li>✉️ Email : contact@monbureautoutpropre.fr</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section">
+      <div class="container">
+        <p>&copy; 2025 Mon Bureau Tout Propre - Tous droits réservés</p>
+      </div>
+    </footer>
+
+    <script src="/public/js/script.js"></script>
+  </body>
+</html>
